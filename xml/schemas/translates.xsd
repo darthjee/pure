@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+  <!-- declaracao da raiz -->
+  <xs:element name="translates" type="translates"/>
+  <xs:complexType name="translates">
+    <xs:sequence>
+      <xs:element name="base" type="base" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="data" type="data" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- declaracoes bases do campo -->
+  <xs:complexType name="base">
+    <xs:sequence>
+      <xs:element name="selector" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="deflang" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="fields" type="fieldlist" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- declaracoes da lista de campos -->
+  <xs:complexType name="fieldlist">
+    <xs:sequence>
+      <xs:element name="field" type="field" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- declaracoes de um tipo de campo -->
+  <xs:complexType name="field">
+    <xs:complexContent>
+      <xs:restriction base="xs:anyType">
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="type" type="xs:string" use="required"/>
+        <xs:attribute name="idat" type="xs:string" use="optional"/>
+        <xs:attribute name="ff" type="xs:string" use="optional"/>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- declaracoes da lista dos diversos idiomas e seus dados -->
+  <xs:complexType name="data">
+    <xs:sequence>
+      <xs:element name="field" type="field"/>
+    </xs:sequence>
+    <xs:attribute name="lang" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:schema>

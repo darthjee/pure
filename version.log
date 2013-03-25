@@ -1,0 +1,10 @@
+Pure 0.3
+
+
+-faz login e logout
+-registra usuarios
+-passa formularios por ajax
+-checa autorizacoes de modulos
+-checa autorizacoes de menus
+-tem controle do menu
+-tem sistema de traducao via XML

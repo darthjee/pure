@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE translates>
+
+<translates
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="schemas/translates.xsd">
+
+  <base>
+    <selector>div#content div#menu form#loginform</selector>
+    <deflang>pt_br</deflang>
+    <fields>
+      <field name="login" id="login" type="label" idat="for" />
+      <field name="password" id="password" type="label" idat="for" />
+      <field name="submitbt" id="submitbt" type="input" ff="val" />
+    </fields>
+  </base>
+
+  <data xml:lang='pt_br' lang='pt_br'>
+    <fill name="login">Login</fill>
+    <fill name="password">Senha</fill>
+    <fill name="submitbt">Logar</fill>
+  </data>
+
+  <data xml:lang='en_us' lang='en_us'>
+    <fill name="login">Login</fill>
+    <fill name="password">Password</fill>
+    <fill name="submitbt">Log in</fill>
+  </data>
+
+</translates>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE translates>
+
+<translates
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="schemas/translates.xsd">
+
+  <base>
+    <selector>div#content div#view</selector>
+    <deflang>pt_br</deflang>
+    <fields>
+      <field name="title" id="title" type="h2"/>
+      <field name="name" id="name" type="label" idat="for" />
+      <field name="surname" id="surname" type="label" idat="for" />
+      <field name="login" id="login" type="label" idat="for" />
+      <field name="email" id="email" type="label" idat="for" />
+      <field name="pass" id="pass" type="label" idat="for" />
+      <field name="confpass" id="confpass" type="label" idat="for" />
+      <field name="submitbt" id="submitbt" type="input" ff="val" />
+    </fields>
+  </base>
+
+  <data xml:lang='pt_br' lang='pt_br'>
+    <fill name="title">Registro</fill>
+    <fill name="name">Nome</fill>
+    <fill name="surname">Sobrenome</fill>
+    <fill name="login">Login</fill>
+    <fill name="email">Email</fill>
+    <fill name="pass">Senha</fill>
+    <fill name="confpass">Confirmação de Senha</fill>
+    <fill name="submitbt">Cadastrar</fill>
+  </data>
+
+  <data xml:lang='en_us' lang='en_us'>
+    <fill name="title">Register</fill>
+    <fill name="name">First Name</fill>
+    <fill name="surname">Last Name</fill>
+    <fill name="login">Login</fill>
+    <fill name="email">Email</fill>
+    <fill name="pass">Password</fill>
+    <fill name="confpass">Password Confirmation></fill>
+    <fill name="submitbt">Submit</fill>
+  </data>
+
+</translates>
